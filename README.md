@@ -1,13 +1,24 @@
-````md
 # 📈 StockVault — Virtual Stock Trading Platform
 
-A modern full-stack virtual stock trading platform built using React, Node.js, Express, and MySQL.
-
-Users receive virtual funds to simulate real-world stock trading with portfolio tracking, analytics dashboards, transaction management, and a responsive dark-themed UI.
+> A modern full-stack virtual stock trading simulator built for learning investment flow, portfolio tracking, and market analytics.
 
 ---
 
-# ✨ Features
+## Tech Stack
+
+| Layer      | Technology                          |
+|------------|-------------------------------------|
+| Frontend   | React.js, Vite, Tailwind CSS        |
+| Backend    | Node.js, Express.js                 |
+| Database   | MySQL                               |
+| Auth       | JWT Authentication + bcryptjs       |
+| Charts     | Chart.js                            |
+| API Calls  | Axios                               |
+| Styling    | Tailwind CSS                        |
+
+---
+
+## Features
 
 - 🔐 JWT Authentication System
 - 📊 Interactive Dashboard
@@ -18,77 +29,63 @@ Users receive virtual funds to simulate real-world stock trading with portfolio 
 - 📉 Dynamic Profit/Loss Calculation
 - 🔎 Search & Filter Stocks
 - 📱 Responsive Design
+- ⚡ Real-Time Market Feel
+- 📊 Portfolio Analytics
 
 ---
 
-# 🖼️ Application Screenshots
+## Screenshots
 
-## 🔐 Login Page
+### 🔐 Login Page
 
 <img src="screenshot/login.png" width="100%">
 
 ---
 
-## 📊 Dashboard
+### 📊 Dashboard
 
 <img src="screenshot/dashboard.png" width="100%">
 
 ---
 
-## 💹 Market Page
+### 💹 Market Page
 
 <img src="screenshot/market.png" width="100%">
 
 ---
 
-## 📈 Portfolio
+### 📈 Portfolio
 
 <img src="screenshot/portfolio.png" width="100%">
 
 ---
 
-## 🧾 Transactions
+### 🧾 Transactions
 
 <img src="screenshot/transactions.png" width="100%">
----
-
-# 🗂️ Project Structure
-
-```bash
-stockvault/
-├── backend/
-├── frontend/
-├── database/
-├── screenshots/
-└── README.md
-````
 
 ---
 
-# ⚙️ Tech Stack
+## Quick Start
 
-| Layer          | Technology                   |
-| -------------- | ---------------------------- |
-| Frontend       | React.js, Vite, Tailwind CSS |
-| Backend        | Node.js, Express.js          |
-| Database       | MySQL                        |
-| Authentication | JWT, bcryptjs                |
-| Charts         | Chart.js                     |
-| HTTP Client    | Axios                        |
+### Prerequisites
+
+- Node.js >= 18
+- MySQL Server
+- npm
 
 ---
 
-# 🚀 Installation
-
-## Clone Repository
+### 1. Clone Repository
 
 ```bash
 git clone https://github.com/mhdkaifkhan/stockvault-market-simulator.git
+cd stockvault
 ```
 
 ---
 
-## Backend Setup
+### 2. Backend Setup
 
 ```bash
 cd backend
@@ -96,9 +93,15 @@ npm install
 npm run dev
 ```
 
+Backend runs on:
+
+```txt
+http://localhost:5000
+```
+
 ---
 
-## Frontend Setup
+### 3. Frontend Setup
 
 ```bash
 cd frontend
@@ -106,49 +109,96 @@ npm install
 npm run dev
 ```
 
----
+Frontend runs on:
 
-# 🗄️ Database Setup
-
-Run the following SQL files inside MySQL:
-
-```sql
-schema.sql
-seeds.sql
+```txt
+http://localhost:5173
 ```
 
 ---
 
-# 📚 Core Modules
+## Database Setup
 
-* Authentication System
-* Market Management
-* Portfolio Tracking
-* Transaction Management
-* Dashboard Analytics
-* User Settings
+Import the following files into MySQL:
 
----
-
-# 📌 Future Enhancements
-
-* Real-Time Stock Simulation
-* AI-Based Stock Prediction
-* Watchlist Feature
-* Live News Integration
-* Advanced Portfolio Analytics
-
----
-
-# 👨‍💻 Developed By
-
-Mohammad Kaif
-
----
-
-# ⭐ Project Status
-
-Completed and actively improving.
-
+```txt
+database/schema.sql
+database/seeds.sql
 ```
+
+Update your backend `.env` file:
+
+```env
+PORT=5000
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password
+DB_NAME=stockvault
+
+JWT_SECRET=your_jwt_secret
+JWT_EXPIRES_IN=7d
 ```
+
+---
+
+## Project Structure
+
+```txt
+stockvault/
+├── backend/
+├── frontend/
+├── database/
+├── screenshot/
+└── README.md
+```
+
+---
+
+## Core Modules
+
+| Module | Description |
+|---|---|
+| Authentication | Secure JWT-based login/register |
+| Dashboard | Portfolio stats and analytics |
+| Market | Live stock listings and trading |
+| Portfolio | Owned stock tracking |
+| Transactions | Buy/sell history |
+| Settings | User preferences |
+
+---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| POST | `/api/auth/register` | Register user |
+| POST | `/api/auth/login` | Login user |
+| GET | `/api/stocks` | Get all stocks |
+| POST | `/api/stocks/buy` | Buy stocks |
+| POST | `/api/stocks/sell` | Sell stocks |
+| GET | `/api/portfolio` | Get portfolio |
+| GET | `/api/transactions` | Transaction history |
+
+---
+
+## Future Enhancements
+
+- 📡 Live Stock APIs
+- 📰 News-Based Market Movement
+- ⭐ Watchlist Feature
+- 📈 Advanced Charts
+- 🤖 AI-Based Prediction System
+- 🔔 Toast Notifications
+
+---
+
+## Developed By
+
+**Mohammad Kaif**
+
+---
+
+## Project Status
+
+✅ Completed and actively improving.
