@@ -25,31 +25,31 @@ Users receive virtual funds to simulate real-world stock trading with portfolio 
 
 ## 🔐 Login Page
 
-![Login](./screenshots/login.png)
+![Login](./screenshot/login.png)
 
 ---
 
 ## 📊 Dashboard
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./screenshot/dashboard.png)
 
 ---
 
 ## 💹 Market Page
 
-![Market](./screenshots/market.png)
+![Market](./screenshot/market.png)
 
 ---
 
 ## 📈 Portfolio
 
-![Portfolio](./screenshots/portfolio.png)
+![Portfolio](./screenshot/portfolio.png)
 
 ---
 
 ## 🧾 Transactions
 
-![Transactions](./screenshots/transactions.png)
+![Transactions](./screenshot/transactions.png)
 
 ---
 
